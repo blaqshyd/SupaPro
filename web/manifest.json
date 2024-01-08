@@ -1,6 +1,6 @@
 {
-    "name": "firepro",
-    "short_name": "firepro",
+    "name": "superpro",
+    "short_name": "superpro",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
