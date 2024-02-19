@@ -1,8 +1,8 @@
-import 'package:superpro/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
-import 'app.dart';
+import 'package:superpro/core/constants/constants.dart';
+import 'package:superpro/core/core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,5 +20,5 @@ void main() async {
       retryAttempts: 10,
     ),
   );
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
